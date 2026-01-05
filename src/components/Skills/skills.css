@@ -1,0 +1,259 @@
+/* Container */
+.skills {
+  /* border: 1px solid red; */
+  padding: 60px 20px;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Title */
+.skills h2 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+/* ===== WRAPPER FOR SKILLS + EXPERIENCE ===== */
+.skills-experience-wrapper {
+  display: grid;
+  grid-template-columns: 2.2fr 1fr;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+/* Grid layout */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  justify-items: start;
+}
+
+/* Card styling */
+.skill-card {
+  border: none;
+  border-radius: 16px;
+  padding: 20px;
+  width: 140px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover effects */
+.skill-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(255, 85, 70, 0.5),
+              0 6px 6px rgba(75, 144, 255, 0.3);
+}
+
+/* Icon styling */
+.skill-icon svg {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover effect on icon */
+.skill-card:hover .skill-icon svg {
+  transform: scale(1.2) rotate(10deg);
+  filter: drop-shadow(0 0 8px currentColor);
+}
+
+/* Skill name text */
+.skill-card p {
+  color: #fff;
+  font-size: 1.1rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* ================= EXPERIENCE SECTION ================= */
+
+.experience {
+    
+  display: flex;
+  flex-direction: column;
+
+  gap: 32px;
+  padding-top: 10px;
+}
+
+/* Each experience row */
+.experience-item {
+    
+  gap: 20px;
+  position: relative;
+}
+
+/* Vertical timeline line */
+.experience-item::before {
+  content: "";
+  position: absolute;
+  right: 350px;
+  /* top: 32px; */
+  width: 4px;
+  height: 18rem;
+  /* height: calc(100% + 20px); */
+  background: linear-gradient(180deg, #6c63ff, transparent);
+}
+
+/* Last item line fix */
+/* .experience-item:last-child::before {
+  display: none;
+} */
+
+/* Year bubble */
+.experience-year {
+  font-weight: 700;
+  color: #6c63ff;
+  min-width: 60px;
+  position: relative;
+}
+
+/* Year dot */
+.experience-year::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  background: #6c63ff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(108, 99, 255, 0.6);
+}
+
+/* Experience text */
+.experience-details h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.experience-details p {
+  font-size: 0.96rem;
+  color: #aaa;
+}
+/* ================= RESPONSIVE FIX ================= */
+
+/* Large tablets & small laptops */
+@media (max-width: 1024px) {
+  .skills-experience-wrapper {
+    grid-template-columns: 1.8fr 1fr;
+    gap: 50px;
+  }
+
+  .skills h2 {
+    font-size: 2.6rem;
+  }
+
+  .skill-card {
+    width: 125px;
+    padding: 18px;
+  }
+
+  .skill-icon svg {
+    width: 52px;
+    height: 52px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+  .skills-experience-wrapper {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+
+  .experience-item::before {
+    right: auto;
+    left: 6px;
+    height: 100%;
+  }
+}
+
+/* Large phones */
+@media (max-width: 768px) {
+  .skills {
+    padding: 50px 16px;
+  }
+
+  .skills h2 {
+    font-size: 2.3rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+  }
+
+  .skill-card {
+    width: 115px;
+    padding: 16px;
+  }
+
+  .skill-card p {
+    font-size: 1rem;
+  }
+
+  .experience-details h4 {
+    font-size: 1rem;
+  }
+
+  .experience-details p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .skills {
+    padding: 40px 12px;
+  }
+
+  .skills h2 {
+    font-size: 2rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+  .skill-card {
+    width: 105px;
+    padding: 14px;
+  }
+
+  .skill-icon svg {
+    width: 45px;
+    height: 45px;
+  }
+
+  .experience {
+    gap: 24px;
+  }
+
+  .experience-year {
+    font-size: 0.9rem;
+  }
+
+  .experience-details p {
+    font-size: 0.85rem;
+  }
+}

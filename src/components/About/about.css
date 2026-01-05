@@ -1,0 +1,116 @@
+
+#about{
+  scroll-margin-top: 7rem;
+}
+.about {
+
+  max-width: 60rem;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+  margin: 0 auto;   /* ✅ THIS CENTERS IT */
+}
+
+
+.about-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about-me{
+  background: linear-gradient(
+    90deg,
+    #6c63ff,
+    #8b5cf6
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about-para {
+  font-size: 1.12rem;
+  line-height: 1.9;
+  color: #ffffff;
+  max-width: 50rem;
+  margin: 0 auto;
+  text-align: center; /* FIXED */
+}
+
+.about-para p {
+  margin-bottom: 1.6rem; /* spacing between lines */
+}
+
+/* ===== Responsive Fix (All Devices) ===== */
+
+/* Large screens (1200px+) */
+@media (min-width: 1200px) {
+  .about {
+    max-width: 70rem;
+  }
+
+  .about-title {
+    font-size: 3.2rem;
+  }
+
+  .about-para {
+    font-size: 1.15rem;
+  }
+}
+
+/* Tablets & small laptops */
+@media (max-width: 992px) {
+  .about {
+    padding: 3.5rem 2rem;
+  }
+
+  .about-title {
+    font-size: 2.6rem;
+  }
+
+  .about-para {
+    font-size: 1.05rem;
+  }
+}
+
+/* Tablets & large phones */
+@media (max-width: 768px) {
+  .about {
+    padding: 3rem 1.5rem;
+  }
+
+  .about-title {
+    font-size: 2.2rem;
+  }
+
+  .about-para {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .about {
+    padding: 2.5rem 1rem;
+    
+  }
+
+  .about-title {
+    font-size: 1.9rem;
+  }
+
+  .about-para {
+    font-size: 0.95rem;
+    
+  }
+
+  .about-para p {
+    margin-bottom: 1.2rem;
+    
+  }
+}

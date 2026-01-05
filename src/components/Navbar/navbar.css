@@ -1,0 +1,146 @@
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 5rem;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+  background-color: #000000;
+  height: 5rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+
+  overflow: visible; /* ✅ FIX */
+}
+
+/* ================= DESKTOP MENU ================= */
+
+.desktopMenu {
+  display: flex;
+  align-items: center;
+}
+
+.desktopMenuListItem {
+  margin: 1rem;
+  cursor: pointer;
+  color: white;
+}
+
+.desktopMenuListItem:hover {
+  color: #6c63ff;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #6c63ff;
+}
+
+/* ================= BUTTON ================= */
+
+.desktopMenuBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid transparent;
+  color: white;
+  background-image: linear-gradient(#000, #000),
+    linear-gradient(90deg, #6c63ff, #8b5cf6);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+
+  padding: 0 1rem;
+  font-size: 16px;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.desktopMenuImg {
+  object-fit: cover;
+  height: 1.3rem;
+  width: 1rem;
+  margin: 0.7rem;
+  filter: brightness(0) invert(1);
+}
+
+.desktopMenuBtn:active {
+  background: #edecec;
+  color: #000;
+}
+
+.desktopMenuBtn:active .desktopMenuImg {
+  filter: brightness(0) invert(0);
+}
+
+/* ================= HAMBURGER ================= */
+
+.hamburgerIcon {
+  display: none;          /* hidden on desktop */
+  cursor: pointer;
+  margin-left: auto;
+  position: relative;
+  z-index: 2000;          /* ✅ FIX */
+}
+
+/* ================= MOBILE MENU ================= */
+
+.mobileMenu {
+  position: fixed;
+  top: 5rem;
+  right: 0;
+
+  width: 100%;
+  background: black;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+
+  padding: 2rem 0;
+  z-index: 100;
+}
+
+.mobileMenu a {
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+/* ================= OVERLAY ================= */
+
+.navOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 90;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .desktopMenu,
+  .desktopMenuBtn {
+    display: none;
+  }
+
+  .hamburgerIcon {
+    display: block; /* ✅ FIX */
+  }
+}
