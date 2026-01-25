@@ -8,11 +8,11 @@ const projectsData = [
     live: "https://shrutigour.github.io/portfolio/",
     github: "https://github.com/your-username/portfolio-react",
   },
-  // {
-  //   title: "Coming Soon",
-  //   live: "",
-  //   github: "",
-  // },
+  {
+    title: "To-Do List",
+    live: "",
+    github: "",
+  },
   // {
   //   title: "Coming Soon",
   //   live: "",
