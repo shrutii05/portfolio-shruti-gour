@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./intro.css";
 import arrow from "../../assets/down-arrow.png";
-import resume from "../../assets/Shruti Resume.pdf";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import resume from "../../assets/Resume.pdf";
 
 
 const roles = ["Web Developer", "Frontend Developer"];
@@ -52,9 +52,9 @@ Always learning and refining my craft through real projects.
         </p>
 
         <div className="introBtns">
-          <a href={resume} download className="btn2">
+          <a href={resume} download target="_blank" rel="noreferrer" className="btn2">
             <img src={arrow} alt="CV" className="btnImg arrowImg" />
-            Download CV
+            Download Resume
           </a>
 
           <div className="links">

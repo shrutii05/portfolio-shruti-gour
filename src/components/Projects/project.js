@@ -5,8 +5,13 @@ import "./project.css";
 const projectsData = [
   {
     title: "Portfolio Website",
-    live: "https://shrutigour.github.io/portfolio/",
-    github: "https://github.com/your-username/portfolio-react",
+    live: "https://shruti-gour-portfolio.netlify.app",
+    github: "https://github.com/shrutii05/portfolio-shruti-gour",
+  },
+  {
+    title: "To-Do List",
+    live: "",
+    github: "",
   },
   {
     title: "To-Do List",
@@ -49,7 +54,7 @@ const Project = () => {
       <div className="projects-container">
         {projectsData.slice(0, visibleCount).map((item, index) => (
           <div className="project-box" key={index}>
-            <div className="project-box" key={index}>
+            
               {/* Project Title */}
               <h3 className="project-name">{item.title}</h3>
 
@@ -74,7 +79,7 @@ const Project = () => {
                 </a>
               </div>
             </div>
-          </div>
+        
         ))}
       </div>
 
