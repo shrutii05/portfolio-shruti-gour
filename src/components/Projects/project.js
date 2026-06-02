@@ -9,15 +9,15 @@ const projectsData = [
     github: "https://github.com/shrutii05/portfolio-shruti-gour",
   },
   {
-    title: "To-Do List",
-    live: "",
-    github: "",
+    title: "Yoga Website Landing Page",
+    live: "https://yoga-website-landing-page.netlify.app",
+    github: "https://github.com/shrutii05/Yoga-website-landing-page.git",
   },
-  {
-    title: "To-Do List",
-    live: "",
-    github: "",
-  },
+  // {
+  //   title: "To-Do List",
+  //   live: "",
+  //   github: "",
+  // },
   // {
   //   title: "Coming Soon",
   //   live: "",
