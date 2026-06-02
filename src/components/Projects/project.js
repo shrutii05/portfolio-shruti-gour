@@ -11,13 +11,13 @@ const projectsData = [
   {
     title: "Yoga Website Landing Page",
     live: "https://yoga-website-landing-page.netlify.app",
-    github: "https://github.com/shrutii05/Yoga-website-landing-page.git",
+    github: "https://github.com/shrutii05/Yoga-website-landing-page",
   },
-  // {
-  //   title: "To-Do List",
-  //   live: "",
-  //   github: "",
-  // },
+  {
+    title: "Weather Forecast",
+    live: "https://weather-app-by-shruti.netlify.app",
+    github: "https://github.com/shrutii05/Weather-App",
+  },
   // {
   //   title: "Coming Soon",
   //   live: "",
