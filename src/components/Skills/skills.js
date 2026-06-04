@@ -255,7 +255,7 @@ const skills = [
 
 const experiences = [
   {
-    year: "2024 - Present",
+    year: "Dec 2024 - June 2026",
     role: "Graphic Designer",
     company: "Aceels Adornment Pvt. Ltd. | Remote",
   },
